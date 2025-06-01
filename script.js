@@ -52,7 +52,7 @@
 
   function startCarousel() {
   let index = 0;
-  loadingText.textContent = "Welcome, Teacher";
+  loadingText.textContent = "Welcome, Odonohue";
   loadingFeatureDiv.textContent = "";
 
   function showNextFeature() {
