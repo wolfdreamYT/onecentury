@@ -17,10 +17,7 @@
   const newFeatures = [
     "Welcome",
     "Wolf Studios presents",
-    "Project History",
-    "With 25+ Documents",
-    "A nice, calming UI",
-    "Real Timeline data",
+    "One Century",
     "Get ready..."
   ];
 
