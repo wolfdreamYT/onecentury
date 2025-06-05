@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneCentury - Changelog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+
+<button id="skip-button" onclick="window.location.href='index.html'">⬅️</button>
+
+
+    <div id="container">
+    <div id="sidebar">
+        <h2>Versions</h2>
+        <button onclick="showPage('doc1')">Version 1.0</button>
+        <button onclick="showPage('doc2')">Version 1.0 - 2025.1</button>
+        <button onclick="showPage('doc3')">Version 1.0 - 2025.2</button>
+        <button onclick="showPage('doc4')">Version 1.0 - 2025.3</button>
+    </div>
+
+
+    <div id="main">
+        <div id="timeline-wrapper">
+        <div id="timeline">
+            <div class="time-step" id="time-doc1" onclick="showPage('doc1')">2025.0</div>
+            <div class="time-step" id="time-doc2" onclick="showPage('doc2')">2025.1</div>
+            <div class="time-step" id="time-doc3" onclick="showPage('doc3')">2025.2</div>
+            <div class="time-step" id="time-doc4" onclick="showPage('doc4')">2025.3</div>
+        </div>
+        </div>
+
+        <div id="doc1" class="doc-page active">
+            <h1>2025.0 - V1</h1>
+            <p>created base code, including documents, timeline, and more</p>
+            <br>
+            <p>added domain URL with public access 24/7</p>
+            <br>
+            <p>added colored UI (8-bit depth)</p>
+        </div>
+
+        <div id="doc2" class="doc-page">
+        <h1>2025.1 - V1</h1>
+        <p>fixed bugs and exploits with skipping feature</p>
+        <br>
+        <p>added clickable timeline buttons</p>
+        <br>
+        <p>up to 30 documents added</p>
+        <br>
+        </div>
+        <div id="doc3" class="doc-page">
+            <h1>2025.2 - V1</h1>
+            <p>added 5 more documents completing one century</p>
+            <br>
+            <p>added smooth animations</p>
+            <br>
+            <p>added changelog page</p>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
