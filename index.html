@@ -9,10 +9,20 @@
 </head>
 <body>
 
-    <audio id="myAudio" loop>
-        <source src="startup-music.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <div id="loading-screen">
+        <div id="loading-text">Loading...</div>
+        <div id="loading-feature"></div>
+        <div id="carousel"></div>
+        <audio id="bg-music" loop>
+            <source src="do-not-use-me.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+  <audio id="myAudio" loop>
+    <source src="startup-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <script>
     const audio = document.getElementById("myAudio");
@@ -24,17 +34,6 @@
 
     document.body.addEventListener("click", startAudio);
   </script>
-
-    <div id="loading-screen">
-        <div id="loading-text">Loading...</div>
-        <div id="loading-feature"></div>
-        <div id="carousel"></div>
-        <audio id="bg-music" loop>
-            <source src="startup-music.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
 
     <div id="container">
     <div id="sidebar">
@@ -69,6 +68,11 @@
         <button onclick="showPage('doc28')">Nazi germany loses</button>
         <button onclick="showPage('doc29')">Victory in europe & japan falls</button>
         <button onclick="showPage('doc30')">The Aftermath</button>
+        <button onclick="showPage('doc31')">United Nations</button>
+        <button onclick="showPage('doc32')">The Cold War</button>
+        <button onclick="showPage('doc33')">The rise of music</button>
+        <button onclick="showPage('doc34')">The rise of technology</button>
+        <button onclick="showPage('doc35')">The September 11th attacks</button>
     </div>
 
 
@@ -105,16 +109,24 @@
             <div class="time-step" id="time-doc28" onclick="showPage('doc28')">1945</div>
             <div class="time-step" id="time-doc29" onclick="showPage('doc29')">1945</div>
             <div class="time-step" id="time-doc30" onclick="showPage('doc30')">1945 Above</div>
+            <div class="time-step" id="time-doc31" onclick="showPage('doc31')">October 1945</div>
+            <div class="time-step" id="time-doc32" onclick="showPage('doc32')">1947 - 1991</div>
+            <div class="time-step" id="time-doc33" onclick="showPage('doc33')">1950 - 2000s</div>
+            <div class="time-step" id="time-doc34" onclick="showPage('doc34')">1985-2000s</div>
+            <div class="time-step" id="time-doc35" onclick="showPage('doc35')">September 2001</div>
         </div>
         </div>
 
         <div id="doc1" class="doc-page active">
-            <h1>Hello There, O'Donohue</h1>
+            <h1>Hello There, Odonohue</h1>
             <p>In this website, contains almost every major event that took place in the 20th century. This website will include vimy ridge, world war 1 and 2, parts of modern era, and more!</p>
+            <br>
             <br>
             <p>Please do keep in mind that each topic is in its own document, for easy access. This is both for you, and me (since it takes me forever scrolling through the script i made on google docs), so some of the events may not be in chronological order.</p>
             <br>
+            <br>
             <p>However, you can see what timeline the current event your reading is just by looking sat the top, right above the document, you can see a bar with a highlited year/time. This will help you understand when it happened if not said in the article itself.</p>
+            <br>
             <br>
             <p>This website contains over 30 topics and events/documents, making sure it holds all information you may need to grade me. Enjoy reading!</p>
             <p>Some of these documents may look different due to formatting with Windows XP. I did write some of this in windowsXP, as they have better wifi than my computor itself.</p>
@@ -148,6 +160,13 @@
         <br>
         Now this assassination was the beginning of a horror movie, or what we call WW1. But before we jump into that, let's talk about what happened after Franz’s death.
         </p>
+        <div class="image-section">
+            <img src="franz-ferdinand.png" alt="Franz Ferdinand" style="max-width: 100%; height: auto;">
+        </div>
+
+        <div class="image-section">
+            <img src="franz-ferdinand2.png" alt="Franz Ferdinand" style="max-width: 100%; height: auto;">
+        </div>
         </div>
         <div id="doc3" class="doc-page">
         <h1>Austria-Hungary Demands</h1>
@@ -236,7 +255,7 @@ In 1918, Germany made the final, and major offense. They tried to win before Ame
         <div id="doc15" class="doc-page">
             <h1>Kaiser flees germany to netherlands</h1>
             <p>
-Right before the armistice, on november 9th, 1918, Kaiser Wilhelm II abdicated (gave up the throne), and fled to the Netherlands. This turned Germany into a republic, called the Weimar republic. Many Germans did not think they had lost the war at the time. This created a dangerous myth that they were “stabbed in the back” by politicians, not defeated in battle. 
+Right before the armistice, on november 9th, 1918, Kaiser Wilhelm II abdicated (gave up the throne) on November 9, 1918, and fled to the Netherlands. This turned Germany into a republic, called the Weimar republic. Many Germans did not think they had lost the war at the time. This created a dangerous myth that they were “stabbed in the back” by politicians, not defeated in battle. 
             </p>
         </div>
         <div id="doc16" class="doc-page">
@@ -437,6 +456,96 @@ On August 15, 1945, Japan announced its surrender. This day is known as V-J Day 
             <p>
 But now the world had to deal with the aftermath. Countries were destroyed, millions were dead, and refugees were everywhere. The horrors of the Holocaust were exposed, revealing that over 6 million Jews had been murdered by the Nazis.
             </p>
+        </div>
+        <div id="doc31" class="doc-page">
+            <h1>United Nations</h1>
+            <p>
+In 1945, the United Nations was created to prevent another world war. 51 countries were to come together to try and solve global conflicts peacefully, without war. This was the better version of League of Nations, and you can find their base camp at New York, U.S.
+            </p>
+        </div>
+        <div id="doc32" class="doc-page">
+            <h1>The Cold War</h1>
+            <p>
+The U.S. and the Soviet Union (USSR) were now the two superpowers. They were allies during WWII, but after the war, they started to disagree. The US wanted democracy and capitalism, while the USSR wanted to spread communism. This led to a new kind of war: the Cold War.
+In 1947, the US introduced the Marshall Plan to help rebuild European countries and stop the spread of communism by giving them money and support.
+<br>
+<br>
+Then in 1949, Germany was split in two: West Germany (capitalist and supported by the US  and allies) and East Germany (communist and controlled by the USSR). Berlin, the capital, was also split. The Berlin Airlift happened in 1948–1949 when the USSR blocked supplies to West Berlin, so the US flew in food and fuel for almost a year.
+<br>
+<br>
+After World War II ended in 1945, the world was split into two powerful sides: the United States and the Soviet Union (USSR). These two were called “superpowers”, and they didn’t trust each other at all. The US believed in democracy and capitalism, while the USSR wanted communism to spread. This caused what we now call the Cold War—a war of threats, spying, and competition, but without the two sides directly shooting at each other.
+<br>
+<br>
+In 1947, U.S. President Harry Truman promised to help any country threatened by communism. This was called the Truman Doctrine. Around the same time, the U.S. created the Marshall Plan, giving billions of dollars to rebuild Western Europe so that they wouldn't fall to communism. The USSR saw this as the US trying to buy influence.
+<br>
+<br>
+Germany was divided into two: the West controlled by the U.S., Britain, and France, and the East controlled by the USSR. In 1948, Stalin tried to block off West Berlin (which was in East Germany) by cutting off supplies. In response, the U.S. and its allies flew in food and fuel for nearly a year. This was called the Berlin Airlift, and it showed the West wasn’t going to back down.
+<br>
+<br>
+In 1950, communist North Korea, backed by China and the USSR, invaded South Korea, supported by the U.S. and the United Nations. It was a brutal war, with millions dead. In 1953, they signed a ceasefire, and Korea remained divided at the 38th parallel, just like it is today. This war was one of the first real fights in the Cold War.
+<br>
+<br>
+The U.S. and its allies had already formed a group called NATO (North Atlantic Treaty Organization) in 1949, to protect themselves from Soviet attacks. In 1955, the USSR responded by creating the Warsaw Pact with other communist countries in Eastern Europe. The world was now divided into two armed camps.
+<br>
+<br>
+In 1957, the USSR launched Sputnik, the first satellite into space. This shocked the U.S., and started the Space Race—a battle to see who could control space first. The U.S. quickly created NASA, and started building rockets and training astronauts. This race wasn’t just about science—it was also about power and showing who was better.
+<br>
+<br>
+East Germans were escaping to West Germany for freedom and better lives. To stop this, in 1961, the Soviets built the Berlin Wall—a huge wall that divided East and West Berlin. It became a symbol of the Cold War, showing how the world was split between communism and democracy.
+<br>
+<br>
+Probably the scariest moment of the Cold War was In 1962, when the U.S. found out the USSR was putting nuclear missiles in Cuba, just 90 miles from Florida. President John F. Kennedy warned them to remove the missiles or face war (which the USSR had not much of a choice). For 13 days, the world held its breath, hoping nothing bad happened. Luckily, In the end, the Soviets removed the missiles, and the U.S. promised not to invade Cuba. Some people say this was the closest the world came to nuclear war, and others thought of it as a “lesson”.
+            </p>
+        </div>
+                <div id="doc33" class="doc-page">
+            <h1>Rise of Rock</h1>
+            <p>
+Now let's make this article a bit brighter, shall we?! In the 1960s, and 1970s, rock became a widely known music genre, and led some of the greatest bands of all time. Famous rock bands like Queen, Bon Jovi, Whitesnake, and even some classics like Metallica, Led Zeppelin, or Aerosmith were top of the line! Whenever a new release came out, people would buy the disks, or vinyl records at the stores!
+            </p>
+        </div>
+                <div id="doc34" class="doc-page">
+            <h1>The Rise of Technology</h1>
+            <p>
+ In 1985, Microsoft released the first ever Windows version: 1.0. This version allowed users to select apps on screen, with a mouse/cursor, buttons, and more! It was groundbreaking, because most Operating systems used only text, which got boring. But with UI and Graphics, you can introduce a new generation of computers.
+<br>
+<br>
+Microsoft soon released 2.0, 3.0 and even 3.1! These were amazing as every new OS had a new UI, more better graphics, and better sound!
+<br>
+<br>
+Then, in 1995, came windows 95. This was the ground breaking technology, which introduced the official UI of windows! It was a teal background with app icons on the desktop, and a task bar on the bottom. You could look through programs, you could play games, and you could even connect external drives and communicate with them without needing to use MS-DOS!
+<br>
+<br>
+After windows 95, came windows 98, released in 1998, a better version of 95. Despite being almost exactly the same as the 95, it still had better apps, more features and better customizability. Windows 98 is probably the most iconic UI you’ll ever see.
+<br>
+<br>
+After those windows versions, microsoft created many new versions (such as the NT series, but did not get alot of fame), and probably the most notorious OS that they released after windows 98, was Windows XP.
+<br>
+<br>
+In 2001, windowsXP was released to consumers, and had the iconic startup sound, and included the most fun games of the time: pinball 3D, minesweeper, hearts, spider solitaire, and more! Windows XP came with better drives, and despite being over 20 years old, you can still connect to the internet with it, as it did not rely on dial-up. You can still log into your google account, and use google apps, as the browser most known for its user-compatibility for windowsXP: MyPal. Infact, some of this script I wrote in windowsXP, so thats why some of the format styles of the previous description are a bit weird. 
+            </p>
+        </div>
+        <div id="doc35" class="doc-page">
+        <h1>The September 11 Attacks</h1>
+        <p>Now another major event that took place in 2001 is 9/11. This event was a terrorist attack on the United States, originating from afghanistan. On the 11th day of September, at around 8:46AM, a plane was taken hostage by Al-Qaeda terrorist group, and was american airlines flight 11, and was forced to crash into the north tower of the world trade centre at 8:46AM. The terrorist group leader for that plane was Mohamed Atta. He was the hijacker pilot, who forced the plane to crash into the north tower. At first, everyone thought it was a mistake, but then flight 175 was forced to crash into the south tower at 9:03AM, which then made everyone realize it was not what they thought, it was hell, in fact, they realized it was terrorists at play.  The second plane crash was led by Marwan al-Shehhi, the other hijacker pilot. 
+<br>
+<br>
+Due to the amount of heat and burning fuel, the tower’s central core and infrastructure melted, making the towers collapse. This collapse turned all of New York into a dusty storm. The outcome of the attacks were devastating. Nearly 2,996 (almost 3,000) people died on 9/11.
+<br>
+<br>
+This sparked President Barack Obama at the time. It took Obama and his team nearly 10 years, but then on May 2nd, 2011, the navy seal team was sent to a raid to kill Osama bin laden, the leader of Al-Qaeda (the terrorist group that caused 9/11). 
+<br>
+<br>
+At 1:00 in pakistan time, osama bin laden was found in his hidden hideout spot in Abbottabad, where the navy seal team, specifically Robert O’Niell. Robert shot Osama bin Laden in the head and chest, to verify his death.
+<br>
+<br>
+To make sure no one would honor him, the military took Osama Bin Laden’s body and threw it in the ocean. 
+<br>
+<br>
+In 2006, the World Trade centre re-opened, but as a single tower. And on march 13, 2006 they had also built the 9/11 memorial, where only the sound of water you can hear. The memorial is not only built to display the attack and its devastating outcome, but to show the horror of reading all the names, thinking of all those families who either lost their mom, dad, or even both.
+<br>
+<br>
+Nothing can replace those 3000 lives, but remembering and honoring them is as much as we can do. In the US, on September 11th, there is a moment of silence, to honor and respect all those lives taken by those terrorists.
+</p>
         </div>
     </div>
     </div>
