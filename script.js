@@ -49,7 +49,7 @@
 
   function startCarousel() {
   let index = 0;
-  loadingText.textContent = "Welcome, O'Donohue";
+  loadingText.textContent = "Welcome, Mr. O'Donohue";
   loadingFeatureDiv.textContent = "";
 
   function showNextFeature() {
